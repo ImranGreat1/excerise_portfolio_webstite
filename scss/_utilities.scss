@@ -1,0 +1,45 @@
+.container {
+    max-width: $website-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+}
+
+%btn-share {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn {
+    &-main {
+        @extend %btn-share;
+        background-color: $main-color;
+        color: $light-color;
+    }
+
+    &-light {
+        @extend %btn-share;
+        background-color: $light-color;
+        color: $dark-color;
+    }
+
+    &-dark {
+        @extend %btn-share;
+        background-color: $dark-color;
+        color: $light-color;
+    }
+}
+
+button[class^="btn-"]:hover,
+input[class^="btn-"]:hover,
+a[class^="btn-"]:hover {
+    background-color: $main-color;
+}
+
+.lead {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}

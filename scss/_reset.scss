@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: $light-color;
+
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}

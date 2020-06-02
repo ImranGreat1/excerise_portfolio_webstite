@@ -1,0 +1,64 @@
+@import "config";
+
+
+
+#logo {
+  width: 70px;
+  height: auto;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 2.5rem;
+    }
+
+    a {
+      display: block;
+      color: $light-color;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s ease;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+
+      &:hover {
+        border-color: $main-color;
+      }
+
+      &.current {
+        border-bottom: 3px solid $main-color;
+      }
+    }
+  }
+}
+
+#header {
+  &-home {
+    // set url relative to css folder
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
+    height: 100vh;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20%;
+
+      a {
+        margin: 2.5rem 0;
+      }
+    }
+  }
+
+
+}
+
+@import "reset";
+@import "utilities";

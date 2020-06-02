@@ -1,0 +1,132 @@
+#logo {
+  width: 70px;
+  height: auto;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main-nav ul {
+  display: flex;
+}
+#main-nav ul li {
+  margin-right: 2.5rem;
+}
+#main-nav ul a {
+  display: block;
+  color: #f4f4f4;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+#main-nav ul a:hover {
+  border-color: #ffbc00;
+}
+#main-nav ul a.current {
+  border-bottom: 3px solid #ffbc00;
+}
+
+#header-home {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+#header-home .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+}
+#header-home .content a {
+  margin: 2.5rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #f4f4f4;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.btn-dark, .btn-light, .btn-main {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn-main {
+  background-color: #ffbc00;
+  color: #f4f4f4;
+}
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+.btn-dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+button[class^=btn-]:hover,
+input[class^=btn-]:hover,
+a[class^=btn-]:hover {
+  background-color: #ffbc00;
+}
+
+.lead {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
