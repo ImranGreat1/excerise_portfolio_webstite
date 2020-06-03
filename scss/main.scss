@@ -1,6 +1,5 @@
 @import "config";
-
-
+@import "reset";
 
 #logo {
   width: 70px;
@@ -43,6 +42,7 @@
     // set url relative to css folder
     background: url("../img/showcase.jpg") no-repeat center center/cover;
     height: 100vh;
+    color: $light-color;
 
     .content {
       display: flex;
@@ -56,9 +56,113 @@
       }
     }
   }
-
-
 }
 
-@import "reset";
+#home {
+  &-a {
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+
+      i {
+        color: $main-color;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
+
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+      }
+    }
+  }
+
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+
+      &-icon {
+        position: relative;
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: set-text-color($dark-color);
+        padding: 3rem;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background-color: $main-color;
+          color: set-text-color($main-color);
+          padding: 3.5rem;
+
+          .process-step {
+            background-color: $dark-color;
+            color: set-text-color($dark-color);
+          }
+        }
+
+
+
+      }
+
+      &-step {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: $main-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        // To center
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 1s, color 1s;
+      }
+    }
+  }
+}
+
+// MAIN FOOTER
+#main-footer {
+  height: 70px;
+  background-color: $dark-color;
+  color: set-text-color($dark-color);
+
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .socials {
+    i {
+      text-align: center;
+      padding: 1rem;
+      border: 3px solid $light-color;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+  }
+}
+
+
+
 @import "utilities";

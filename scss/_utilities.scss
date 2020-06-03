@@ -40,6 +40,54 @@ a[class^="btn-"]:hover {
 }
 
 .lead {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+$spaces: (1, 2, 3, 4, 5);
+
+@each $space in $spaces {
+
+    // Margins
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    // Paddings
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}
+
+.bottom-line {
+    height: 3px;
+    width: 7rem;
+    background-color: $main-color;
+    margin: 3px auto 0 auto;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 200;
 }

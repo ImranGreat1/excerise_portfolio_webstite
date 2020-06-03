@@ -1,7 +1,19 @@
 // Variables
-$website-width : 1100px;
+$website-width : 1200px;
 $main-color: #ffbc00;
 $dark-color: #333;
+$medium-color: #ccc;
 $light-color: #f4f4f4;
 $font-stack: "Dosis",
 sans-serif;
+
+
+@function set-text-color($bg-color) {
+    @if(lightness($bg-color) > 50) {
+        @return $dark-color;
+    }
+
+    @else {
+        @return $light-color;
+    }
+}
