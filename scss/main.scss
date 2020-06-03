@@ -1,6 +1,7 @@
 @import "config";
 @import "reset";
 
+// NAVBAR
 #logo {
   width: 70px;
   height: auto;
@@ -37,6 +38,8 @@
   }
 }
 
+
+// HEADER
 #header {
   &-home {
     // set url relative to css folder
@@ -56,8 +59,14 @@
       }
     }
   }
+
+  &-inner {
+    background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+    height: 7rem;
+  }
 }
 
+// HOME
 #home {
   &-a {
     .specials {
@@ -160,6 +169,43 @@
       border-radius: 50%;
       margin-right: 5px;
     }
+  }
+}
+
+
+// ABOUT PAGE
+#about-info {
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 3rem 0;
+    gap: 2rem;
+
+    &>div {
+      padding: 1rem;
+    }
+
+    &>div:first-child {
+      grid-column: 1 / span 3;
+    }
+
+    &>div:nth-child(3) {
+      grid-column: 2 / span 2;
+      border-left: 3px solid $main-color;
+      background-color: $medium-color;
+      color: set-text-color($medium-color);
+    }
+
+    .award {
+      padding: 1.5rem 0;
+
+      i {
+        color: $main-color;
+      }
+    }
+
+
   }
 }
 

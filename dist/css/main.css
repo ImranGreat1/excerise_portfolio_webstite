@@ -89,6 +89,10 @@ h1 {
 #header-home .content a {
   margin: 2.5rem 0;
 }
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 7rem;
+}
 
 #home-a .specials {
   display: grid;
@@ -166,6 +170,32 @@ h1 {
   margin-right: 5px;
 }
 
+#about-info .info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+#about-info .info-container > div {
+  padding: 1rem;
+}
+#about-info .info-container > div:first-child {
+  grid-column: 1/span 3;
+}
+#about-info .info-container > div:nth-child(3) {
+  grid-column: 2/span 2;
+  border-left: 3px solid #ffbc00;
+  background-color: #ccc;
+  color: #333;
+}
+#about-info .info-container .award {
+  padding: 1.5rem 0;
+}
+#about-info .info-container .award i {
+  color: #ffbc00;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -202,7 +232,7 @@ a[class^=btn-]:hover {
 
 .lead {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 .text-center {
@@ -339,6 +369,24 @@ a[class^=btn-]:hover {
 .section-title {
   font-size: 3rem;
   font-weight: 200;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.m-heading {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.s-heading {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */

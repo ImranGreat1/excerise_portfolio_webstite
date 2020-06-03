@@ -41,7 +41,7 @@ a[class^="btn-"]:hover {
 
 .lead {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
 }
 
 .text-center {
@@ -90,4 +90,22 @@ $spaces: (1, 2, 3, 4, 5);
 .section-title {
     font-size: 3rem;
     font-weight: 200;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.m-heading {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.s-heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 500;
 }
