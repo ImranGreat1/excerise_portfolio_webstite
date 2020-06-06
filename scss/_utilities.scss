@@ -18,19 +18,19 @@
     &-main {
         @extend %btn-share;
         background-color: $main-color;
-        color: $light-color;
+        color: set-text-color($main-color);
     }
 
     &-light {
         @extend %btn-share;
         background-color: $light-color;
-        color: $dark-color;
+        color: set-text-color($light-color);
     }
 
     &-dark {
         @extend %btn-share;
         background-color: $dark-color;
-        color: $light-color;
+        color: set-text-color($dark-color);
     }
 }
 
@@ -38,6 +38,7 @@ button[class^="btn-"]:hover,
 input[class^="btn-"]:hover,
 a[class^="btn-"]:hover {
     background-color: $main-color;
+    color: set-text-color($main-color);
 }
 
 // TEXT
