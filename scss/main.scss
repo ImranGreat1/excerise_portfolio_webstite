@@ -178,7 +178,6 @@
 
 // ABOUT PAGE
 #about {
-
   // SECTION A
   &-a {
     .info-container {
@@ -191,7 +190,7 @@
       padding: 3rem 0;
       gap: 2rem;
 
-      &>div {
+      & > div {
         padding: 1rem;
       }
 
@@ -307,13 +306,11 @@
       }
     }
   }
-
 }
 
 // CONTACT PAGE
 #contact {
   &-a {
-
     form {
       width: inherit;
       display: block;
@@ -326,7 +323,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .form-wrap>div {
+    .form-wrap > div {
       margin: 1rem;
     }
 
@@ -350,7 +347,6 @@
       }
     }
 
-
     .msg {
       grid-column: 1 / span 2;
       height: 17rem;
@@ -363,13 +359,13 @@
         font-size: 2rem;
       }
     }
-
   }
 
   // CONTACT: SECTION B
   &-b {
     .contact-icons {
-      width: 100%;
+      width: 80%;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
 
@@ -381,12 +377,10 @@
         font-size: 1.8rem;
       }
     }
-
   }
 }
 
 // End of contact page
-
 
 @import "utilities";
 @import "work";

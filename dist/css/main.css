@@ -312,9 +312,9 @@ h1 {
 #contact-a .submit-btn button {
   font-size: 2rem;
 }
-
 #contact-b .contact-icons {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
