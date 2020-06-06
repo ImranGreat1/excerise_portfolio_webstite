@@ -1,0 +1,90 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .item {
+    position: relative;
+    background-color: $main-color;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: inherit;
+      transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+      opacity: 0.9;
+      transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    // Bring in Overlay color on hover
+    &:hover:after {
+      transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+    }
+
+    // Bring in text on hover
+    &:hover .item-text-wrap {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    // Scale image on hover
+    &:hover .item-image {
+      transform: scale(1.2);
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      transition: transform 3s ease;
+      img {
+        transform: scale(1.1);
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    // Dealing with text
+    &-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      right: 100%;
+      z-index: 1;
+    }
+
+    &-text::before {
+      content: "";
+      display: block;
+      padding-top: 50%;
+    }
+
+    &-text-wrap {
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: opacity 2s cubic-bezier(0.2, 1, 0.3, 1),
+        transform 2s cubic-bezier(0.2, 1, 0.3, 1);
+      transition-delay: 0.3s;
+    }
+
+    &-category {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    &-title {
+      font-size: 3.5rem;
+      margin: 1rem 0;
+      text-transform: uppercase;
+    }
+  }
+}

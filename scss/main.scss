@@ -38,7 +38,6 @@
   }
 }
 
-
 // HEADER
 #header {
   &-home {
@@ -61,7 +60,7 @@
   }
 
   &-inner {
-    background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+    background: url("../img/showcase.jpg") no-repeat 20% 30% / cover;
     height: 7rem;
   }
 }
@@ -123,9 +122,6 @@
             color: set-text-color($dark-color);
           }
         }
-
-
-
       }
 
       &-step {
@@ -149,10 +145,13 @@
 
 // MAIN FOOTER
 #main-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 70px;
   background-color: $dark-color;
   color: set-text-color($dark-color);
-
 
   .footer-container {
     display: flex;
@@ -177,14 +176,12 @@
   }
 }
 
-
 // ABOUT PAGE
 #about {
 
   // SECTION A
   &-a {
     .info-container {
-
       display: grid;
       grid-template-areas:
         "info-header info-header info-header"
@@ -219,7 +216,6 @@
       }
 
       .award {
-
         &-one {
           grid-area: award-one;
         }
@@ -232,14 +228,11 @@
           grid-area: award-three;
         }
       }
-
-
     }
   }
 
   // SECTION B
   &-b {
-
     .progress-wrapper {
       width: 90%;
       margin: 0 auto;
@@ -270,7 +263,6 @@
           }
         }
       }
-
     }
   }
 
@@ -279,7 +271,6 @@
     .clients-logo {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      ;
       gap: 2rem;
       padding: 7rem 3rem;
       align-items: center;
@@ -289,7 +280,6 @@
       width: 15rem;
     }
   }
-
 
   // SECTION D
   &-d {
@@ -319,9 +309,7 @@
   }
 
   // END OF SECTION D
-
 }
 
-
-
 @import "utilities";
+@import "work";
