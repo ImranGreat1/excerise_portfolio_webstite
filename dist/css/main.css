@@ -272,9 +272,6 @@ h1 {
   margin-right: 1rem;
   transition: width 1s;
 }
-#about-d .clients .profile img:hover {
-  width: 15rem;
-}
 
 #contact-a form {
   width: inherit;
