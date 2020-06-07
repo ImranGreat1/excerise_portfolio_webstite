@@ -651,7 +651,7 @@ a[class^=btn-]:hover {
   }
 
   #header-home .content {
-    padding-top: 45%;
+    padding-top: 40%;
   }
   #header-inner {
     background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
@@ -737,6 +737,16 @@ a[class^=btn-]:hover {
     padding: 0 1rem;
   }
 }
+@media screen and (max-width: 900px) and (max-height: 420px) {
+  #header-home .content {
+    padding-top: 5%;
+  }
+}
+@media screen and (min-width: 800px) and (min-height: 1024px) {
+  #header-home .content {
+    padding-top: 50%;
+  }
+}
 @media screen and (max-width: 350px) {
   .container {
     padding: 0 5px;
@@ -761,6 +771,16 @@ a[class^=btn-]:hover {
   #main-nav li {
     margin-right: 0;
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 350px) {
+  .l-heading,
+.lead {
+    margin: 0 5px;
+  }
+
+  #header-home .content {
+    padding-top: 3%;
   }
 }
 
