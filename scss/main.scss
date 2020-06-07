@@ -17,7 +17,12 @@
 
     li {
       margin-right: 2.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
+
 
     a {
       display: block;
@@ -178,6 +183,7 @@
 
 // ABOUT PAGE
 #about {
+
   // SECTION A
   &-a {
     .info-container {
@@ -190,7 +196,7 @@
       padding: 3rem 0;
       gap: 2rem;
 
-      & > div {
+      &>div {
         padding: 1rem;
       }
 
@@ -317,13 +323,18 @@
     }
 
     .form-wrap {
+      border: 2px solid $medium-color;
       width: 70%;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
-    .form-wrap > div {
+    .form-wrap>div {
       margin: 1rem;
     }
 
@@ -364,7 +375,7 @@
   // CONTACT: SECTION B
   &-b {
     .contact-icons {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -384,3 +395,4 @@
 
 @import "utilities";
 @import "work";
+@import "media_queries";

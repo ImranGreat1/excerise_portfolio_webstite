@@ -1,0 +1,229 @@
+// Tablet started at 768px
+@media screen and (max-width: 768px) {
+
+    // Utility classes
+    .container {
+        padding: 0 3rem;
+    }
+
+    .l-heading {
+        font-size: 3.5rem;
+    }
+
+    .m-heading {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+
+    // Header
+    #main-nav {
+        flex-direction: column;
+
+        ul {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    #header {
+        &-home {
+            .content {
+                padding-top: 45%;
+            }
+        }
+
+        &-inner {
+            background: url("../img/showcase.jpg") no-repeat 20% 30% / cover;
+            height: 13rem;
+        }
+    }
+
+    // Home
+    #home {
+        &-a {
+            .specials {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-b {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-c {
+            .process {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // Footer
+    #main-footer {
+        height: 130px;
+
+        .footer-container {
+            flex-direction: column;
+            justify-content: flex-start;
+            justify-content: center;
+
+            .socials {
+                order: 2;
+            }
+        }
+    }
+
+
+    // About
+    #about {
+
+        // Section A
+        &-a {
+            .info-container {
+                grid-template-areas: "info-header info-header info-header"
+                    "info-img info-img info-img"
+                    "info-content info-content info-content"
+                    "award-one award-one award-one"
+                    "award-two award-two award-two"
+                    "award-three award-three award-three"
+                ;
+
+                .award-one,
+                .award-two,
+                .award-three {
+                    border-bottom: 2px dotted $medium-color;
+                }
+
+            }
+        }
+
+        // Sectinon C
+        &-c {
+            .clients-logo {
+                gap: 1rem;
+                padding: 5rem 2rem;
+            }
+
+            img {
+                width: 13rem;
+            }
+        }
+
+        // Section D
+        &-d {
+            .clients {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .clients>div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                .profile {
+                    order: -1;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    // WORK PAGE
+
+    #work {
+        &-a {
+            .items {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // CONTACT PAGE
+    #contact {
+        &-a {
+
+            .form-wrap {
+                grid-template-columns: 1fr;
+                width: 100%;
+            }
+
+            .msg,
+            .submit-btn {
+                grid-column: 1 / span 1;
+            }
+        }
+
+        &-b {
+            .contact-icons {
+                flex-direction: column;
+            }
+
+            ul {
+                border-bottom: 2px dotted $medium-color;
+                padding: 2rem;
+            }
+
+            ul:last-child {
+                border-bottom: none;
+            }
+
+        }
+    }
+
+    // END OF CONTAGE PAGE
+}
+
+
+// Normal Smartphones start at 600px
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+
+// Smaller Smartphones start at 350px
+
+@media screen and (max-width: 350px) {
+
+    // Utility classes
+    .container {
+        padding: 0 5px;
+    }
+
+    .l-heading {
+        font-size: 2.5rem;
+    }
+
+    .m-heading {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    // Header
+    #header {
+        &-home {
+            .content {
+                padding-top: 25%;
+            }
+        }
+    }
+
+    // Header
+    #main-nav {
+        li {
+            margin-right: 0;
+            font-size: 1.5rem;
+        }
+    }
+
+}

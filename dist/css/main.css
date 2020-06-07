@@ -40,7 +40,6 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
   line-height: 1.2;
 }
 
@@ -59,6 +58,9 @@ h1 {
 }
 #main-nav ul li {
   margin-right: 2.5rem;
+}
+#main-nav ul li:last-child {
+  margin-right: 0;
 }
 #main-nav ul a {
   display: block;
@@ -276,10 +278,15 @@ h1 {
   display: block;
 }
 #contact-a .form-wrap {
+  border: 2px solid #ccc;
   width: 70%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 #contact-a .form-wrap > div {
   margin: 1rem;
@@ -313,7 +320,7 @@ h1 {
   font-size: 2rem;
 }
 #contact-b .contact-icons {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -329,7 +336,7 @@ h1 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 
 .btn-dark, .btn-light, .btn-main {
@@ -616,6 +623,145 @@ a[class^=btn-]:hover {
   font-size: 3.5rem;
   margin: 1rem 0;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .l-heading {
+    font-size: 3.5rem;
+  }
+
+  .m-heading {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  #main-nav {
+    flex-direction: column;
+  }
+  #main-nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #header-home .content {
+    padding-top: 45%;
+  }
+  #header-inner {
+    background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+    height: 13rem;
+  }
+
+  #home-a .specials {
+    grid-template-columns: 1fr;
+  }
+  #home-b .stats {
+    grid-template-columns: 1fr;
+  }
+  #home-c .process {
+    grid-template-columns: 1fr;
+  }
+
+  #main-footer {
+    height: 130px;
+  }
+  #main-footer .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+  }
+  #main-footer .footer-container .socials {
+    order: 2;
+  }
+
+  #about-a .info-container {
+    grid-template-areas: "info-header info-header info-header" "info-img info-img info-img" "info-content info-content info-content" "award-one award-one award-one" "award-two award-two award-two" "award-three award-three award-three";
+  }
+  #about-a .info-container .award-one,
+#about-a .info-container .award-two,
+#about-a .info-container .award-three {
+    border-bottom: 2px dotted #ccc;
+  }
+  #about-c .clients-logo {
+    gap: 1rem;
+    padding: 5rem 2rem;
+  }
+  #about-c img {
+    width: 13rem;
+  }
+  #about-d .clients {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  #about-d .clients > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  #about-d .clients > div .profile {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  #work-a .items {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-a .form-wrap {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #contact-a .msg,
+#contact-a .submit-btn {
+    grid-column: 1/span 1;
+  }
+  #contact-b .contact-icons {
+    flex-direction: column;
+  }
+  #contact-b ul {
+    border-bottom: 2px dotted #ccc;
+    padding: 2rem;
+  }
+  #contact-b ul:last-child {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .l-heading {
+    font-size: 2.5rem;
+  }
+
+  .m-heading {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  #header-home .content {
+    padding-top: 25%;
+  }
+
+  #main-nav li {
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
