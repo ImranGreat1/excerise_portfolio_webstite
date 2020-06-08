@@ -253,6 +253,7 @@ h1 {
   align-items: center;
 }
 #about-c img {
+  display: block;
   width: 15rem;
 }
 #about-d .clients {
@@ -690,10 +691,10 @@ a[class^=btn-]:hover {
   }
   #about-c .clients-logo {
     gap: 1rem;
-    padding: 5rem 2rem;
+    padding: 5rem 0;
   }
   #about-c img {
-    width: 13rem;
+    width: 12rem;
   }
   #about-d .clients {
     grid-template-columns: 1fr;
@@ -735,6 +736,14 @@ a[class^=btn-]:hover {
 @media screen and (max-width: 600px) {
   .container {
     padding: 0 1rem;
+  }
+
+  #about-c .clients-logo {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  #about-c img {
+    margin: 1rem auto;
   }
 }
 @media screen and (max-width: 900px) and (max-height: 420px) {
