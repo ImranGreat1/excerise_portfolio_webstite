@@ -743,6 +743,7 @@ a[class^=btn-]:hover {
     padding: 2rem;
   }
   #about-c img {
+    width: 15rem;
     margin: 1rem auto;
   }
 }
